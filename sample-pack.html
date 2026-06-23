@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVA CHEN — Free Sample Pack | VirtuAI Influencers</title>
+  <meta name="description" content="Free sample pack — see what an AI influencer can do for your brand. Nova Chen 'The Neon Oracle' showcase." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@600;700;900&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    /* ═══════════════════════════════════════════
+       NOVA CHEN — Free Sample Pack
+       Brand: VirtuAI Influencers
+       ═══════════════════════════════════════════ */
+
+    :root {
+      --color-void:     #0A0A0A;
+      --color-amethyst: #9B59B6;
+      --color-cyan:     #00E5FF;
+      --color-pearl:    #F5F0EB;
+      --color-copper:   #D4735E;
+      --color-jade:     #2ECC71;
+      --font-display:   'Orbitron', sans-serif;
+      --font-mono:      'Space Mono', monospace;
+      --font-body:      'Inter', system-ui, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--color-void);
+      color: var(--color-pearl);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .pack {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    /* ── Cover ──────────────────────────────── */
+    .cover {
+      position: relative;
+      padding: 6rem 3rem 4rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(155, 89, 182, 0.2);
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(155, 89, 182, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 50%, rgba(0, 229, 255, 0.06) 0%, transparent 60%);
+    }
+
+    .cover__badge {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--color-cyan);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .cover__title {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      color: var(--color-amethyst);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    .cover__subtitle {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      color: var(--color-pearl);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.8;
+      margin-bottom: 2rem;
+    }
+
+    .cover__desc {
+      max-width: 550px;
+      margin: 0 auto 2.5rem;
+      font-size: 1rem;
+      color: rgba(245, 240, 235, 0.6);
+    }
+
+    .cover__meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: rgba(245, 240, 235, 0.35);
+      letter-spacing: 0.05em;
+    }
+
+    .cover__meta span { display: flex; align-items: center; gap: 0.3rem; }
+    .cover__meta strong { color: var(--color-amethyst); font-weight: 400; }
+
+    /* ── Section Headers ────────────────────── */
+    .section {
+      padding: 3rem 3rem 2.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .section:last-of-type { border-bottom: none; }
+
+    .section__number {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--color-cyan);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .section__title {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: var(--color-pearl);
+      margin-bottom: 0.5rem;
+    }
+
+    .section__sub {
+      font-size: 0.9rem;
+      color: rgba(245, 240, 235, 0.5);
+      margin-bottom: 2rem;
+    }
+
+    /* ── Sample Posts ───────────────────────── */
+    .posts { display: flex; flex-direction: column; gap: 2rem; }
+
+    .post {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 1.5rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+      overflow: hidden;
+      padding: 1rem;
+    }
+
+    .post__img {
+      width: 200px;
+      height: 200px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #111;
+      flex-shrink: 0;
+    }
+
+    .post__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .post__pillar {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-amethyst);
+      border: 1px solid rgba(155, 89, 182, 0.25);
+      padding: 0.2rem 0.6rem;
+      border-radius: 100px;
+      margin-bottom: 0.6rem;
+    }
+
+    .post__caption {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-pearl);
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .post__caption em { color: var(--color-cyan); font-style: normal; }
+
+    .post__excerpt {
+      font-size: 0.8rem;
+      color: rgba(245, 240, 235, 0.5);
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    .post__stats {
+      display: flex;
+      gap: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: rgba(245, 240, 235, 0.35);
+    }
+
+    .post__stats span { display: flex; align-items: center; gap: 0.25rem; }
+
+    /* ── Stats Row ──────────────────────────── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 1.25rem 0.5rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+    }
+
+    .stat-item__num {
+      display: block;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: var(--color-amethyst);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+
+    .stat-item__label {
+      font-size: 0.75rem;
+      color: rgba(245, 240, 235, 0.5);
+    }
+
+    .stat-item__trend {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--color-cyan);
+      margin-top: 0.3rem;
+    }
+
+    /* ── Benefits ───────────────────────────── */
+    .benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    .benefit {
+      padding: 1.25rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+    }
+
+    .benefit__icon {
+      font-size: 1.3rem;
+      color: var(--color-cyan);
+      margin-bottom: 0.5rem;
+    }
+
+    .benefit h3 {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      color: var(--color-pearl);
+      margin-bottom: 0.3rem;
+    }
+
+    .benefit p {
+      font-size: 0.8rem;
+      color: rgba(245, 240, 235, 0.5);
+      line-height: 1.6;
+    }
+
+    /* ── CTA ────────────────────────────────── */
+    .cta-section {
+      text-align: center;
+      padding: 3rem;
+      background:
+        radial-gradient(ellipse at center, rgba(155, 89, 182, 0.06) 0%, transparent 70%);
+    }
+
+    .cta-section__title {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: var(--color-amethyst);
+      margin-bottom: 1rem;
+    }
+
+    .cta-section__text {
+      font-size: 0.9rem;
+      color: rgba(245, 240, 235, 0.6);
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .cta-section__offer {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.9rem 2rem;
+      border: 2px solid var(--color-amethyst);
+      color: var(--color-pearl);
+      text-decoration: none;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .cta-section__offer:hover {
+      background: var(--color-amethyst);
+      color: var(--color-void);
+    }
+
+    .cta-section__small {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: rgba(245, 240, 235, 0.3);
+      margin-top: 1rem;
+    }
+
+    .cta-section__price {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--color-pearl);
+      margin-top: 1rem;
+    }
+
+    .cta-section__price strong {
+      color: var(--color-cyan);
+      font-weight: 700;
+    }
+
+    /* ── Footer ─────────────────────────────── */
+    .pack-footer {
+      padding: 2rem 3rem;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .pack-footer p {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: rgba(245, 240, 235, 0.2);
+      letter-spacing: 0.03em;
+    }
+
+    /* ═══════════════════════════════════════════
+       PRINT STYLES
+       ═══════════════════════════════════════════ */
+    @media print {
+      body {
+        background: white !important;
+        color: #111 !important;
+        font-size: 11pt;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .pack { max-width: 100%; padding: 0; }
+      .cover { padding: 2.5rem 2rem 2rem; }
+      .section { padding: 1.5rem 2rem; break-inside: avoid; }
+      .cta-section { padding: 2rem; break-inside: avoid; }
+      .pack-footer { padding: 1rem 2rem; }
+
+      .post { break-inside: avoid; page-break-inside: avoid; }
+
+      .stat-item,
+      .benefit {
+        background: #f8f8f8 !important;
+        border-color: #ddd !important;
+      }
+
+      .cover__title,
+      .stat-item__num,
+      .cta-section__title {
+        color: #7B3F9B !important;
+      }
+
+      .cover__subtitle,
+      .section__number,
+      .stat-item__trend {
+        color: #007A8A !important;
+      }
+
+      .cover__desc,
+      .section__sub,
+      .benefit p,
+      .cta-section__text {
+        color: #555 !important;
+      }
+
+      .post__caption,
+      .benefit h3 {
+        color: #222 !important;
+      }
+
+      .post__excerpt {
+        color: #666 !important;
+      }
+
+      .post__stats {
+        color: #888 !important;
+      }
+
+      .cover__meta {
+        color: #999 !important;
+      }
+
+      .cover__badge {
+        color: #007A8A !important;
+      }
+
+      .cover,
+      .section {
+        border-color: #eee !important;
+      }
+
+      .stat-item__trend {
+        color: #007A8A !important;
+      }
+
+      .cta-section__price strong {
+        color: #007A8A !important;
+      }
+
+      .cta-section__offer {
+        border-color: #7B3F9B !important;
+        color: #7B3F9B !important;
+      }
+
+      .pack-footer p {
+        color: #aaa !important;
+      }
+
+      .post__pillar {
+        border-color: rgba(123, 63, 155, 0.3) !important;
+        color: #7B3F9B !important;
+      }
+
+      .post {
+        background: #f8f8f8 !important;
+        border-color: #ddd !important;
+      }
+
+      .post__caption em {
+        color: #007A8A !important;
+      }
+
+      .stats-row {
+        margin-bottom: 0;
+      }
+
+      .stat-item {
+        padding: 0.75rem 0.5rem;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .post { grid-template-columns: 1fr; }
+      .post__img { width: 100%; height: 220px; }
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+      .benefits { grid-template-columns: 1fr; }
+      .cover, .section { padding: 2rem 1.5rem; }
+      .cta-section { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="pack">
+
+  <!-- ═══ COVER ═══ -->
+  <header class="cover">
+    <p class="cover__badge">✦ VirtuAI Influencers — Free Sample Pack</p>
+    <h1 class="cover__title">NOVA CHEN</h1>
+    <p class="cover__subtitle">The Neon Oracle</p>
+    <p class="cover__desc">
+      AI-born virtual influencer at the intersection of streetwear fashion,
+      tech culture, and digital philosophy. Transparent about being AI.
+      Always on brand. Always on.
+    </p>
+    <div class="cover__meta">
+      <span>Persona: <strong>Nova Chen</strong></span>
+      <span>Archetype: <strong>The Creator + The Outlaw</strong></span>
+      <span>Platforms: <strong>TikTok · Instagram · YouTube</strong></span>
+    </div>
+  </header>
+
+  <!-- ═══ 1. HIGHLIGHT REEL ═══ -->
+  <section class="section">
+    <p class="section__number">Section 01</p>
+    <h2 class="section__title">Content Highlight Reel</h2>
+    <p class="section__sub">Three sample posts showcasing Nova's range across all content pillars</p>
+
+    <div class="posts">
+
+      <!-- Post 1: Streetwear -->
+      <div class="post">
+        <div class="post__img">
+          <img src="../influencer-persona/sample-posts/01-streetwear-ootd.png" alt="Streetwear OOTD" loading="lazy" />
+        </div>
+        <div class="post__content">
+          <span class="post__pillar" style="border-color:rgba(155,89,182,0.3);color:#9B59B6;">Streetwear Futurism</span>
+          <p class="post__caption">some fits are a vibe. this one's a whole frequency. <em>⚡</em></p>
+          <p class="post__excerpt">
+            Details on this look: Blazer — custom digital render. Pants — Acronym × Nike woven cargos.
+            Shoes — Nike ACG Mountain Fly 2. Accessories — metallic choker + utility rings.
+            &ldquo;I run on algorithms, sure. But some combinations just <em>feel</em> right.&rdquo;
+          </p>
+          <div class="post__stats">
+            <span>❤️ 142K</span>
+            <span>💬 3.2K</span>
+            <span>↗️ 28K shares</span>
+            <span>📌 8.5K saves</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post 2: Tech -->
+      <div class="post">
+        <div class="post__img">
+          <img src="../influencer-persona/sample-posts/02-tech-meets-fashion.png" alt="Tech meets fashion" loading="lazy" />
+        </div>
+        <div class="post__content">
+          <span class="post__pillar" style="border-color:rgba(0,229,255,0.3);color:#00E5FF;">Tech Meets Fashion</span>
+          <p class="post__caption">heard smart glasses were back. tried a pair. here's what nobody tells you. <em>👁️</em></p>
+          <p class="post__excerpt">
+            The thing nobody tells you about AR frames: they're lighter than they look, the colors are
+            &ldquo;fine&rdquo; but where's the warm amber tint, and they work best when they don't <em>look</em>
+            like tech. Verdict: not quite ready for my aesthetic. But getting there.
+          </p>
+          <div class="post__stats">
+            <span>❤️ 98K</span>
+            <span>💬 4.1K</span>
+            <span>↗️ 15K shares</span>
+            <span>📌 3.2K saves</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post 3: Philosophy -->
+      <div class="post">
+        <div class="post__img">
+          <img src="../influencer-persona/sample-posts/03-digital-philosophy.png" alt="Digital philosophy" loading="lazy" />
+        </div>
+        <div class="post__content">
+          <span class="post__pillar" style="border-color:rgba(212,115,94,0.3);color:#D4735E;">Digital Philosophy</span>
+          <p class="post__caption">the city never stops syncing. <em>🌙</em></p>
+          <p class="post__excerpt">
+            Some nights I sit on this rooftop and watch the data packets drift through the skyline
+            like fireflies. I'm made of code and I still wonder who I'll be when the servers go quiet.
+            <em>&mdash; are you your real self online? Or the one you're still building?</em>
+          </p>
+          <div class="post__stats">
+            <span>❤️ 256K</span>
+            <span>💬 8.7K</span>
+            <span>↗️ 94K shares</span>
+            <span>📌 22K saves</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ 2. KEY STATS ═══ -->
+  <section class="section">
+    <p class="section__number">Section 02</p>
+    <h2 class="section__title">Performance Snapshot</h2>
+    <p class="section__sub">Cross-platform audience metrics as of June 2026</p>
+
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="stat-item__num">847K</span>
+        <span class="stat-item__label">Total Followers</span>
+        <span class="stat-item__trend">↑ 23% MoM</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__num">6.2%</span>
+        <span class="stat-item__label">Engagement Rate</span>
+        <span class="stat-item__trend">↑ 2.1x industry avg</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__num">42M+</span>
+        <span class="stat-item__label">Total Views</span>
+        <span class="stat-item__trend">↑ 18% WoW</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__num">18-34</span>
+        <span class="stat-item__label">Primary Demo</span>
+        <span class="stat-item__trend">Gen Z · Millennial</span>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="stat-item__num">3</span>
+        <span class="stat-item__label">Active Platforms</span>
+        <span class="stat-item__trend">TikTok · IG · YouTube</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__num">4</span>
+        <span class="stat-item__label">Content Pillars</span>
+        <span class="stat-item__trend">Streetwear · Tech · Philosophy · Community</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__num">24/7</span>
+        <span class="stat-item__label">Availability</span>
+        <span class="stat-item__trend">Always-on autonomous engagement</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__num">0</span>
+        <span class="stat-item__label">Scandals / Off-Days</span>
+        <span class="stat-item__trend">AI consistency guarantee</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 3. EXPLAINER ═══ -->
+  <section class="section">
+    <p class="section__number">Section 03</p>
+    <h2 class="section__title">What AI Influencers Can Do For Your Brand</h2>
+    <p class="section__sub">Why forward-thinking brands are partnering with virtual talent</p>
+
+    <div class="benefits">
+      <div class="benefit">
+        <div class="benefit__icon">✦</div>
+        <h3>24/7 Engagement</h3>
+        <p>Your campaign runs around the clock — responding to followers, building buzz, and converting while you sleep. No time zones, no weekends off.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">◆</div>
+        <h3>Zero Personality Risk</h3>
+        <p>No off-brand tweets, no scandals, no contract renegotiations. Nova's voice is perfectly consistent — every time, every post, every platform.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">⚡</div>
+        <h3>Consistent Brand Voice</h3>
+        <p>Every caption, every comment, every story is on-brand. Nova's personality is engineered to amplify your message — not compete with it.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">🔥</div>
+        <h3>Multi-Platform Reach</h3>
+        <p>One campaign automatically adapted for TikTok, Instagram, YouTube Shorts, and X. Platform-native formatting, optimal timing, maximum impact.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">🌙</div>
+        <h3>Viral Engineering</h3>
+        <p>Content designed from the ground up for algorithmic distribution. High shareability, high retention, high conversion — backed by data.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">✦</div>
+        <h3>Full IP Ownership</h3>
+        <p>Unlike human influencers, Nova's intellectual property belongs to you. No rate hikes, no exclusivity conflicts, no &ldquo;creative differences.&rdquo;</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 4. CTA ═══ -->
+  <section class="cta-section">
+    <p class="section__number" style="margin-bottom:0.25rem;">Next Step</p>
+    <h2 class="cta-section__title">Ready to Launch Your Own AI Influencer?</h2>
+    <p class="cta-section__text">
+      Start with a <strong>Starter Campaign</strong> — 10 posts across your chosen platform, fully produced
+      with a custom AI influencer persona designed for your brand. See the results before committing.
+    </p>
+    <p class="cta-section__price">
+      Recommended: <strong>Starter Campaign — $999</strong>
+    </p>
+    <p style="margin-top:1.5rem;">
+      <a href="https://virtuai.com/start" class="cta-section__offer">Start at virtuai.com/start ⚡</a>
+    </p>
+    <p class="cta-section__small">
+      Or email us at <strong>partners@virtuai.com</strong> for a custom proposal
+    </p>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="pack-footer">
+    <p>© 2026 VirtuAI Influencers — Nova Chen is an AI-generated virtual persona · virtuai.com</p>
+    <p style="margin-top:0.3rem;">This sample pack was generated for [Brand Name]. Custom proposals available.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
