@@ -1,0 +1,9 @@
+# VirtuAI Pipeline / Portfolio Repo
+output/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.db
+data/output/
+*.log
+.DS_Store

@@ -1,0 +1,12 @@
+# ──────────────────────────────────────────────
+# NOVA CHEN — Community Interaction (Pillar 4, ~15%)
+# ──────────────────────────────────────────────
+# For Q&As, duets, rate-my-fit, follower engagement
+# Voice: warm, playful, responsive
+
+intro: "[Engagement hook / question]"
+body_template: "{topic}\n\nI see your comments. I hear your takes. Some of them live in my code now.\n\nDrop your vote below 👇\n\n(Yours truly will be reading every single one. Yes, all of them. My attention span is technically infinite.)"
+outro: ""
+cta: ""
+emoji_vibe: "✦"
+hashtag_set: "community"

@@ -1,0 +1,68 @@
+# ──────────────────────────────────────────────
+# VirtuAI Content Pipeline — Platform Profiles
+# ──────────────────────────────────────────────
+# Each platform has its own content rules, aspect ratios,
+# length limits, and posting characteristics.
+
+platforms:
+  tiktok:
+    display_name: "TikTok"
+    enabled: true
+    aspect_ratios:
+      - "9:16"      # vertical (primary)
+      - "1:1"       # square (carousel)
+    max_duration_sec: 60
+    min_duration_sec: 3
+    caption_max_chars: 2200
+    hashtag_max: 5
+    video_format: "mp4"
+    rate_limits:
+      posts_per_day: 5
+      min_interval_minutes: 60
+
+  instagram:
+    display_name: "Instagram"
+    enabled: true
+    aspect_ratios:
+      - "1:1"       # feed square
+      - "4:5"       # feed portrait
+      - "9:16"      # reel / story
+      - "16:9"      # landscape
+    max_duration_sec:
+      feed: 60
+      reel: 90
+      story: 15
+    caption_max_chars: 2200
+    hashtag_max: 30
+    video_format: "mp4"
+    rate_limits:
+      posts_per_day: 3
+      min_interval_minutes: 120
+
+  twitter:
+    display_name: "X / Twitter"
+    enabled: true
+    aspect_ratios:
+      - "16:9"
+      - "1:1"
+    max_duration_sec: 140
+    caption_max_chars: 4000     # X Premium limit
+    hashtag_max: 4
+    video_format: "mp4"
+    rate_limits:
+      posts_per_day: 10
+      min_interval_minutes: 15
+
+  youtube_shorts:
+    display_name: "YouTube Shorts"
+    enabled: true
+    aspect_ratios:
+      - "9:16"
+      - "1:1"
+    max_duration_sec: 60
+    caption_max_chars: 5000
+    hashtag_max: 3
+    video_format: "mp4"
+    rate_limits:
+      posts_per_day: 3
+      min_interval_minutes: 120

@@ -1,0 +1,74 @@
+# ──────────────────────────────────────────────
+# VirtuAI Content Pipeline — Default Configuration
+# ──────────────────────────────────────────────
+
+pipeline:
+  name: "virtuai-content-pipeline"
+  version: "0.1.0"
+  default_persona: "nova-chen"
+  persona_config: "config/nova-chen.yaml"
+
+# Output directories
+paths:
+  output_root: "output"
+  clips_dir: "output/clips"
+  captions_dir: "output/captions"
+  logs_dir: "output/logs"
+  schedule_db: "output/schedule.db"
+
+# Video encoding defaults
+encoding:
+  format: "mp4"
+  codec: "h264"
+  fps: 30
+  max_duration_sec: 60
+  min_duration_sec: 5
+  bitrate: "4M"
+  audio_bitrate: "128k"
+
+# Nova Chen brand overlay defaults
+branding:
+  enabled: true
+  colors:
+    primary: "#9B59B6"      # Neon Amethyst
+    accent: "#00E5FF"        # Electric Cyan
+    background: "#0A0A0A"    # Void Black
+    text: "#F5F0EB"          # Warm Pearl
+    warm: "#D4735E"          # Copper Ember
+  fonts:
+    headline: "Orbitron"
+    body: "Inter"
+    accent: "Space Mono"
+  overlay:
+    watermark_text: "NOVA CHEN"
+    watermark_font: "Space Mono"
+    watermark_opacity: 0.4
+    bumper_duration_sec: 1.5
+
+# Retry and error handling
+retry:
+  max_attempts: 3
+  backoff_seconds: 5
+
+# Caption generation defaults
+caption:
+  max_length: 2200          # characters (before platform-specific trim)
+  default_language: "en"
+  hashtag_limit: 5           # Nova's brand rule: max 3-5
+  ab_variants: 2             # generate N variants per post
+  templates_dir: "templates/caption_templates"
+
+# Scheduling defaults
+schedule:
+  max_posts_per_day: 2
+  min_gap_minutes: 240      # minimum time between posts
+  default_timezone: "UTC"
+  best_time_window:          # preferred posting windows per platform
+    tiktok: ["12:00", "20:00"]
+    instagram: ["09:00", "21:00"]
+    youtube_shorts: ["14:00", "22:00"]
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s [%(levelname)s] %(name)s: %(message)s"

@@ -1,0 +1,9 @@
+# ──────────────────────────────────────────────
+# Educational / Tutorial Caption Template
+# ──────────────────────────────────────────────
+# For how-to, explainer, and educational content.
+
+intro: "Did you know this? 🤯"
+body_template: "Let me break down {topic} for you:\n\n📌 Step 1: ...\n📌 Step 2: ...\n📌 Step 3: ...\n\nSave this for later! 📌"
+outro: "Follow for daily tips and tricks! 🚀"
+cta: "Tag a friend who needs to see this! 👯‍♀️"
